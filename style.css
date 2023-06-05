@@ -1,214 +1,206 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+  margin-top: 150px;
+}
+
+body header {
+  position: fixed;
+  top: 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+}
+
+header img {
+  width: 50%;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 7px;
+}
+
+header ul * {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+}
+
+.email-subscription {
+  max-width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  gap: 10px 0;
+}
+
+.email-subscription h1 {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.email-subscription #email {
+  width: 60%;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.email-subscription button {
+  font-size: large;
+  font-weight: bolder;
+  background-color: #f1c40f;
+  border: none;
+  max-width: fit-content;
+  padding: 7px 20px;
+  margin: 10px auto;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.services .service {
+  /* margin: 50px 0; */
+  width: 70%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service span {
+  display: none;
+  font-size: 100px;
+  margin: 30px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  text-align: center;
+}
+
+.boxes {
+  width: 28%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  margin: 10px;
+  justify-content: space-between;
+}
+
+.boxes h3 {
+  width: 100%;
+  padding: 10px;
+  background-color: silver;
+}
+
+.boxes div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 16px;
+  gap: 20px;
+}
+
+.boxes ul {
+  list-style: none;
+  text-align: center;
+}
+
+.boxes ul li {
+  margin: 5px;
+}
+
+.boxes button {
+  padding: 10px 20px;
+  border: none;
+  font-size: large;
+  background-color: #f1c40f;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+@media only screen and (min-width: 768px) {
   body {
-    font-family: "Lato", sans-serif;
-    background-color: #eee;
-    margin-top: 150px;
+    padding: 0 30px;
   }
-  
+
   body header {
-    position: fixed;
-    top: 0px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #eee;
-  }
-  
-  header img {
-    width: 50%;
-  }
-  
-  header ul {
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 7px;
-  }
-  
-  header ul * {
-    cursor: pointer;
-    color: black;
-    text-decoration: none;
-  }
-  
-  .email-subscription {
-    max-width: fit-content;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    gap: 10px 0;
-  }
-  
-  .email-subscription h1 {
-    font-size: x-large;
-    font-weight: bolder;
-  }
-  
-  .email-subscription #email {
-    width: 60%;
-    margin: 0 auto;
-    padding: 5px;
-  }
-  
-  .email-subscription button {
-    font-size: large;
-    font-weight: bolder;
-    background-color: #f1c40f;
-    border: none;
-    max-width: fit-content;
-    padding: 7px 20px;
-    margin: 10px auto;
-  }
-  
-  .services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .services .service {
-    /* margin: 50px 0; */
-    width: 70%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .service span {
-    display: none;
-    font-size: 100px;
-    margin: 30px;
-  }
-  
-  .container {
-    margin: 0 auto;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    text-align: center;
-  }
-  
-  .boxes {
-    width: 28%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid black;
-    margin: 10px;
+    flex-direction: row;
     justify-content: space-between;
+    padding: 0 20px;
   }
-  
-  .boxes h3 {
-    width: 100%;
-    padding: 10px;
-    background-color: silver;
+  npx stylelint "**/*.{css,scss}"
+  header img {
+    width: 30%;
   }
-  
-  .boxes div {
+
+  header ul {
+    width: 35%;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .services {
+    align-items: left;
+  }
+
+  .services .service {
+    gap: 20px;
+    text-align: left;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+  }
+
+  .service span {
+    margin-right: auto;
+    display: block;
+    color: orange;
+  }
+
+  .services .service > div {
+    width: 70%;
+  }
+
+  .frame {
+    margin: 100px 0;
     display: flex;
     align-items: center;
-    flex-direction: column;
-    padding: 16px;
-    gap: 20px;
+    justify-content: center;
   }
-  
-  .boxes ul {
-    list-style: none;
-    text-align: center;
+
+  .container {
+    flex-direction: row;
   }
-  
-  .boxes ul li {
-    margin: 5px;
-  }
-  
-  .boxes button {
-    padding: 10px 20px;
-    border: none;
-    font-size: large;
-    background-color: #f1c40f;
-  }
-  
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background-color: #ddd;
-    padding: 20px;
-  }
-  footer ul {
-    list-style: none;
-    display: flex;
-    gap: 35px;
-  }
-  footer p {
-    color: grey;
-  }
-  
-  @media only screen and (min-width: 768px) {
-    body {
-      padding: 0 30px;
-    }
-    body header {
-      flex-direction: row;
-      justify-content: space-between;
-      padding: 0 20px;
-    }
-  
-    header img {
-      width: 30%;
-    }
-  
-    header ul {
-      width: 35%;
-      flex-direction: row;
-      justify-content: space-around;
-    }
-  
-    .services {
-      align-items: left;
-    }
-  
-    .services .service {
-      gap: 20px;
-      text-align: left;
-      flex-direction: row;
-      justify-content: center;
-      /* margin: 0; */
-    }
-  
-    .service span {
-      margin-right: auto;
-      display: block;
-      color: orange;
-    }
-  
-    .services .service > div {
-      width: 70%;
-    }
-  
-    .frame {
-      margin: 100px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .container {
-      flex-direction: row;
-    }
-  }
-  
+}
