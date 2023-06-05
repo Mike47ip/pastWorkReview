@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter&family=Roboto&display=swap");
+
+#para {
+  display: flex;
+  padding-top: 20px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #36b37e;
+  justify-content: center;
+}
+
+#title {
+  display: flex;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 52px;
+  text-align: center;
+  color: #172b4d;
+}
+
+#img-caption {
+  padding-top: 6px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42px;
+  text-align: center;
+  color: #36b37e;
+}
+
+#image {
+  display: block;
+  margin-left: 55px;
+  justify-content: center;
+  max-width: 10%;
+  height: auto;
+  border: #36b37e;
+}
+
+#tribute-link {
+  display: flex;
+  justify-content: center;
+}
