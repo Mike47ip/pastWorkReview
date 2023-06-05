@@ -12,7 +12,7 @@ body {
 
 body header {
   position: fixed;
-  top: 0;
+  top: 1px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -150,6 +150,16 @@ footer {
   padding: 20px;
 }
 
+.footer ul {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+footer p {
+  color: grey;
+}
+
 @media only screen and (min-width: 768px) {
   body {
     padding: 0 30px;
@@ -160,7 +170,7 @@ footer {
     justify-content: space-between;
     padding: 0 20px;
   }
-  npx stylelint "**/*.{css,scss}"
+
   header img {
     width: 30%;
   }
@@ -180,7 +190,6 @@ footer {
     text-align: left;
     flex-direction: row;
     justify-content: center;
-    margin: 0;
   }
 
   .service span {
